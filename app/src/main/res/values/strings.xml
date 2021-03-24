@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyFat</string>
     <string name="spinnerActivity">Активность</string>
+    <string name="facebook_app_id">333956173933534</string>
 </resources>
