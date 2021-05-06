@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         EditText edAge=findViewById(R.id.edAge);
         EditText edName=findViewById(R.id.edName);
-        EditText edWeght=findViewById(R.id.edWeght);
+        EditText edWeight=findViewById(R.id.edWeght);
+        EditText edHeight=findViewById(R.id.etHeight);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, spinnerDataActivity);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -81,9 +82,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                user.put("weight", edWeght.getText().toString());
+                user.put("weight", Integer.parseInt( edWeight.getText().toString()));
+                user.put("height", Integer.parseInt( edHeight.getText().toString()));
                 user.put("name", edName.getText().toString());
-                user.put("age", edAge.getText().toString());
+                user.put("age", Integer.parseInt( edAge.getText().toString()));
 
                 Log.d("mydeb", "button work");
                 db.collection("users")

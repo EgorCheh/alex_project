@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFat">
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-        <activity android:name=".RegistrationActivity"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".DishesActivity"></activity>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
-        <activity android:name=".AuthenticationActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".MainActivity">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".AuthenticationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
