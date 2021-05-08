@@ -82,6 +82,7 @@ public class AddDishesActivity extends AppCompatActivity {
                         dish.put("жир",etJir.getText().toString());
                         dish.put("углеводы",etUglevod.getText().toString());
                         dish.put("белок",etBelok.getText().toString());
+                        dish.put("image",id.toString());
                         uploadData();
                     }
                 });

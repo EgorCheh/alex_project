@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFat">
         <activity android:name=".AddDishesActivity">
+
+        </activity>
+        <activity android:name=".DishesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".DishesActivity">
-
         </activity>
 
         <meta-data

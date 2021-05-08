@@ -1,14 +1,18 @@
 package com.example.myfat;
 
+import android.net.Uri;
+
+import java.net.URI;
+
 public class ItemDishes {
-    int image;
+    Uri image;
     String label;
     String belok;
     String jir;
     String uglevod;
     String kkl;
 
-    public ItemDishes(int image, String label, String belok, String jir, String uglevod, String kkl) {
+    public ItemDishes(Uri image, String label, String belok, String jir, String uglevod, String kkl) {
         this.image = image;
         this.label = label;
         this.belok = belok;
@@ -21,11 +25,11 @@ public class ItemDishes {
     }
 
 
-    public int getImage() {
+    public Uri getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(Uri image) {
         this.image = image;
     }
 
